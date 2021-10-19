@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
+class Testview(TemplateView):
+    template_name = "fsm_app/home.html"
